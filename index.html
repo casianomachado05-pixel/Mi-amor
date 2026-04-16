@@ -143,11 +143,11 @@ body {
 
     <div class="lily">🤍🌸</div>
 
-    <div class="gallery">
-        <img src="foto1.jpg">
-        <img src="foto2.jpg">
-        <img src="foto3.jpg">
-    </div>
+   <div class="gallery">
+    <img src="foto1.jpg" onclick="mensaje('Este día fue uno de los más felices con vos 💖')">
+    <img src="foto2.jpg" onclick="mensaje('No dejo de pensar en tu sonrisa ✨')">
+    <img src="foto3.jpg" onclick="mensaje('Sos mi lugar favorito en el mundo 🌎💘')">
+</div>
 
     <button id="loveBtn" onclick="explosion()">Por Siempre 💘</button>
 </div>
@@ -240,7 +240,12 @@ function explosion(){
 
 // FINAL
 function yes(){
-    alert("Sabía que ibas a decir que sí 💖✨");
+    document.body.innerHTML = `
+        <div style="display:flex;justify-content:center;align-items:center;height:100vh;flex-direction:column;background:black;color:white;text-align:center;">
+            <h1 style="font-size:50px;color:#ff66cc;">Ahora sos mía para siempre 💖</h1>
+            <p style="font-size:25px;">Te amo más que a nada en este mundo, Ivana ✨</p>
+        </div>
+    `;
 }
 
 function no(){
